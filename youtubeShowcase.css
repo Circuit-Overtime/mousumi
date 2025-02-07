@@ -1,0 +1,66 @@
+#showcaseClass {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    gap: 10px; /* Reduced gap for a tighter layout */
+    justify-content: center;
+    align-items: start;
+    margin-top: 25px;
+    width: 100%;
+    max-width: 1200px; /* Adjust this based on your layout preference */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.interactable {
+    aspect-ratio: 16 / 9;
+    width: 100%; /* Ensure tiles take full width of grid column */
+    max-width: 400px; /* Adjust max size to control tile size */
+    background-position: center;
+    background-size: cover;
+    opacity: 0.6;
+    transition: .5s;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.interactable:hover {
+    background-size: 110%;
+    opacity: 0.9;
+    transition: .5s;
+}
+
+body:hover > #trailer {
+    opacity: 1;
+  }
+  
+  #trailer {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 20px;
+    
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10000;
+    
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms ease;
+    
+    display: grid;
+    place-items: center;
+  }
+  
+  #trailer:not([data-type=""]) > #trailer-icon {
+    opacity: 1;
+  }
+  
+  #trailer-icon {
+    font-size: 6px;
+    line-height: 4px;
+    opacity: 0;
+    transition: opacity 400ms ease;
+  }
+  
+  

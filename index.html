@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="timeline.css" />
+    <link rel="stylesheet" href="youtubeShowcase.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mousumi Bhattacharya</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mousumi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container profile">
+        <img src="./assets/pfp.jpg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mousumi Bhattacharya </h1>
+        <p class="section__text__p2">Choreographer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume_md.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/youtube.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.youtube.com/@naateshwar__'"
+          />
+          <img
+            src="./assets/instagram.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/_nateshwar__/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about_pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>25+ Years <br />Dance and Choreo Craeer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Mousumi Bhattacharya is an active performer and choreographer with over 30 years of experience in Bharatnatyam, ballet, and related disciplines. A member of the Tanushree Shankar Dance Company alongside Anita Mallick (Saraswat), she has performed extensively in ballet and aerobics. Certified by the esteemed Ananda Shankar, she trained in Kathak under Pt. Omprakash Maharaj and learned folk dance from Guru Botu Pal. She has participated in and organized numerous dance, ballet, aerobics, and fitness workshops. As the founder of Mayuri Centre for Aerobic and Rhythmic Arts, she has contributed to the field with remarkable dedication and stability.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Notable Member Mentions</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Troupe Member</h3>
+                  <p>Tanushree Shankar DC</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mudavis</h3>
+                  <p>Troupe Member</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>
+                    Saraswat
+                  </h3>
+                  <p>Troupe Member</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Cricket World Cup</h3>
+                  <p>Lead Dancer</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>150 Yrs, Race Course</h3>
+                  <p>Lead Dancer</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Yuva Utsab</h3>
+                  <p>Lead Dancer</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Aerobics Workshops</h3>
+                  <p>Certifieds</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Accomplishments</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MAYURI</h3>
+                  <p>Founder</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Certified Troupe Member</h3>
+                  <p>by Ananda Shankar</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>IIDF</h3>
+                  <p>Jorashanko Thakur Bari</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bookfair Cultural Member since 2012</h3>
+                  <p>Chinsurah</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Content Creator</h3>
+                  <p>@youtube</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bookfair Performer @2016</h3>
+                  <p>Chandannagar</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">My Timeline So Far</p>
+      <h1 class="title">Chronology</h1>
+      <ul>
+        <li style="--accent-color:#000000">
+            <div class="date">1994</div>
+            <div class="title">Mudavis</div>
+            <div class="descr">Was a Mudavis (Music Dance Visual) member founded by Late. Ananda Shankar, a live orchestra with dance.</div>
+        </li>
+        <li style="--accent-color:#11005f">
+            <div class="date">1995</div>
+            <div class="title">WCC</div>
+            <div class="descr">Performed as the lead dancer, in the opening of the  WCC 1995 with graceful vibe and audience, hosted in the Eden Gardens.</div>
+        </li>
+        <li style="--accent-color:#E24A68">
+            <div class="date">1997</div>
+            <div class="title">Race Course</div>
+            <div class="descr">Performed as the lead dancer in the 150 Years Celebration of Race Course Kolkata.</div>
+        </li>
+        <li style="--accent-color:#2200FF">
+            <div class="date">1996</div>
+            <div class="title">Yuva Utsab</div>
+            <div class="descr">Performed as the lead dancer in the Yuva Utsab Celebration in Kolkata, WB @1996</div>
+        </li>
+        <li style="--accent-color:#FF00FF">
+            <div class="date">2000</div>
+            <div class="title">MAYURI</div>
+            <div class="descr">Established Mayuri, a dance institute by Mousumi Bhattacharya, covering up dance streams like, ballet contemporary, Bharatnatyam, classical, with over 25 Years of exposure.</div>
+        </li>
+    </ul>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="showcase">
+
+      <p class="section__text__p1">Sneak Peak of my Productions</p>
+      <h1 class="title">Socials</h1>
+      <div id="showcaseClass">
+      <div id="trailer">
+        <ion-icon id="trailer-icon" name="play"></ion-icon>
+      </div>
+      
+      <div 
+        class="interactable" 
+        data-type="link"
+        style="background-image: url(./assets/thumbnails/3-O94OwfsS4-HD.jpg)">
+      </div>
+      
+      <div 
+        class="interactable" 
+        data-type="video"
+        style="background-image: url(./assets/thumbnails/9UkdtE5iXGQ-HD.jpg)">
+      </div>
+
+      <div 
+        class="interactable" 
+        data-type="video"
+        style="background-image: url(./assets/thumbnails/CINEPn0ckGs-HD.jpg)">
+      </div>
+
+      <div 
+        class="interactable" 
+        data-type="video"
+        style="background-image: url(./assets/thumbnails/kTgBc3beDpc-HD.jpg)">
+      </div>
+
+      <div 
+        class="interactable" 
+        data-type="video"
+        style="background-image: url(./assets/thumbnails/lQTBQpX_RuI-HD.jpg)">
+      </div>
+
+      <div 
+        class="interactable" 
+        data-type="video"
+        style="background-image: url(./assets/thumbnails/UWX5pQJyeKw-HD.jpg)">
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:mdbhatt2013@gmail.com">mdbhatt2013@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/youtube.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.youtube.com/@naateshwar__">YouTube</a></p>
+        </div>
+      </div>
+    </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Mousumi. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
